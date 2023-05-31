@@ -28,8 +28,12 @@ namespace MvvmCross_demo.Core.ViewModels {
 
         public string LastName {
             get { return _lastName; }
-            set { SetProperty(ref _lastName, value); }
+            set { SetProperty(ref _lastName, value);
+				RaisePropertyChanged(() => FullName);
+			}
         }
+
+		public string FullName => $"{FirstName} {LastName}";
 
     }
 }

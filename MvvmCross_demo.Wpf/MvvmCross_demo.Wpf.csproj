@@ -11,4 +11,8 @@
     <PackageReference Include="MvvmCross.Platforms.Wpf" Version="9.0.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MvvmCross_demo.Core\MvvmCross_demo.Core.csproj" />
+  </ItemGroup>
+
 </Project>
